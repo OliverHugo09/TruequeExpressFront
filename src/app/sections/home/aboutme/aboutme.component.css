@@ -1,0 +1,27 @@
+.uk-section{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.bloque-1{
+    background-color: var(--bloque-1);
+    height: 40px;
+    padding-left: 25px;
+    padding-top: 20px;
+    width: 117%;
+}
+
+.bloque-2{
+    background-color: var(--bloque-2);
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid var(--borde) !important;
+    margin-right: -40px;
+    padding-top: 20px;
+}
+
+.bloque-1 > p{
+
+    color: var(--blanco) !important;
+}

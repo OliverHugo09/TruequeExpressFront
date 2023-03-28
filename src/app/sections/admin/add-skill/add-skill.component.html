@@ -1,0 +1,33 @@
+<div class="background-color-body-admin">
+    <div class="uk-container uk-container-large">
+        <div uk-height-viewport="offset-top: true" class="uk-section">
+            <div class="uk-container">
+                <h3 class="uk-margin-medium-bottom uk-text-left">Agrega una habilidad</h3>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                        <div class="container">
+                            <form class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-1">
+                                    <div class="uk-form-label uk-text-left">Url imagen</div>
+                                    <input class="uk-input" type="text" name="urlimg" placeholder="Ex.https://fotos.com/content/logo.png" [(ngModel)]="skill.urlimg">
+                                </div>
+                                <div class="uk-width-1-1@s">
+                                    <div class="uk-form-label uk-text-left">Habilidad</div>
+                                    <input class="uk-input" type="text" name="title" placeholder="Ex.Photoshop" [(ngModel)]="skill.title">
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <div class="uk-form-label uk-text-left">Porcentaje</div>
+                                    <input class="uk-input" type="number" name="percentage" placeholder="Ex.50" [(ngModel)]="skill.percentage">
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-small-bottom">
+                                    <div class="uk-form-label uk-text-left">Experiencia</div>
+                                    <input class="uk-input" type="text" name="experiencetime" placeholder="Ex.6 meses" [(ngModel)]="skill.experiencetime">
+                                </div>
+                            </form>
+                                <button class="uk-button uk-modal-close uk-button-secondary uk-margin-small-right uk-margin-small-top" type="button" (click)="cancel()">Cancelar</button>
+                                <button class="uk-button uk-button-primary uk-margin-small-top" type="submit" (click)="addSkill()">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div> 
+</div>

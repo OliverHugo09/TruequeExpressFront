@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "RobotoCondensedRegular";
+    src: local("RobotoCondensedRegular"), url(./assets/fonts/RobotoCondensed-Regular.ttf) format("truetype");
+}
+:root {
+
+    /* Colors: */
+    --footer: #333333;
+    --barra-skill: #67ABDF;
+    --fondo-web-86: #f8f8f8;
+    --blanco: #FFFFFF;
+    --fondo-wallpaper-40: #1B69A6;
+    --blanco1: #74767A;
+    --blanco2: #B3B3B3;
+    --blanco3: #9E9BA3;
+    --blanco4: #B1B4BA;
+    --blanco5: #3D3E40;
+    --main: #2bb32b;
+    --bloque-1: #333333;
+    --bloque-2: #F7F7F7;
+    --borde: #DFDFDF;
+    
+    /* Font/text values */
+    --unnamed-font-family-roboto: "RobotoCondensedRegular";
+    --unnamed-font-style-italic: italic;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-300: 300px;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-20: 14px;
+    --unnamed-font-size-25: 25px;
+    --unnamed-font-size-30: 30px;
+    --unnamed-font-size-40: 40px;
+    --unnamed-font-size-60: 60px;
+    --unnamed-font-size-70: 60px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-37: 37px;
+    --unnamed-line-spacing-48: 48px;
+    --unnamed-line-spacing-72: 72px;
+    --unnamed-line-spacing-85: 85px;
+    }
+    
+    /* Character Styles */
+    h5 {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-bold) !important;
+    font-size: var(--unnamed-font-size-20) !important;
+    line-height: var(--unnamed-line-spacing-24) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--bloque-1) !important;
+    text-transform: none !important;
+    }
+    .form-text {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-normal) !important;
+    font-weight: var(--unnamed-font-weight-300) !important;
+    font-size: var(--unnamed-font-size-20) !important;
+    line-height: var(--unnamed-line-spacing-24) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }
+    .footer-text {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-300) !important;
+    font-size: var(--unnamed-font-size-20) !important;
+    line-height: var(--unnamed-line-spacing-24) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }
+    p {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-300) !important;
+    font-size: var(--unnamed-font-size-20) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--bloque-1) !important;
+    }
+    h2 {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-normal) !important;
+    font-weight: var(--unnamed-font-weight-bold) !important;
+    font-size: var(--unnamed-font-size-60) !important;
+    line-height: var(--unnamed-line-spacing-72) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }
+    .frase {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-normal) !important;
+    font-size: var(--unnamed-font-size-30) !important;
+    line-height: var(--unnamed-line-spacing-48) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }
+    h3 {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-bold) !important;
+    font-size: var(--unnamed-font-size-40) !important;
+    line-height: var(--unnamed-line-spacing-48) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--bloque-1) !important;
+    }
+    h1 {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-normal) !important;
+    font-weight: var(--unnamed-font-weight-bold) !important;
+    font-size: var(--unnamed-font-size-60) !important;
+    line-height: var(--unnamed-line-spacing-85) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }
+    h4 {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-bold) !important;
+    font-size: var(--unnamed-font-size-30) !important;
+    line-height: var(--unnamed-line-spacing-37) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--bloque-1) !important;
+    }/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: "RobotoCondensedRegular", "Helvetica Neue", sans-serif;  }
+
+.background-color-admin{
+    background: linear-gradient(#141e30, #243b55);
+}
+
+.background-color-body-admin{
+    background: linear-gradient(#141e30, #243b55);
+}
+
+.uk-modal-dialog{
+    background-color: var( --footer);
+}
+
+
+table > thead > tr > th{
+    color:white !important;
+    font-weight: 500;
+}
+
+table > tbody > .ligter > td {
+    font-weight:lighter;
+    color:white !important;
+}

@@ -1,0 +1,26 @@
+<div class="uk-section uk-margin-xlarge-top">
+    <div class="uk-container">
+        <h3 class="uk-margin-large-bottom">Habilidades</h3>
+        
+        <div class="uk-grid-match uk-child-width-1-3@s uk-margin" uk-grid>
+            <div class="uk-comment" *ngFor="let skill of skills">
+                <div class="uk-comment-header">
+                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-comment-avatar" src="{{skill.urlimg}}" width="80" height="80" alt="">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h5 class="uk-comment-title uk-margin-remove">{{skill.title}}</h5>
+                            <h5 class="uk-comment-title uk-margin-remove">{{skill.percentage}}%</h5>
+                            <progress class="uk-progress" value="{{skill.percentage}}" max="100"></progress>
+                            <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                <li><a href="">{{skill.experiencetime}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="experience"></div>

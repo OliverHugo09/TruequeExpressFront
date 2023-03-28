@@ -1,0 +1,29 @@
+<div class="background-color-body-admin">
+    <div class="uk-container uk-container-large">
+        <div uk-height-viewport="offset-top: true" class="uk-section">
+            <div class="uk-container">
+                <h3 class="uk-margin-medium-bottom uk-text-left">Agrega una red social</h3>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                        <div class="container">
+                            <form class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-1">
+                                    <div class="uk-form-label uk-text-left">Url imagen</div>
+                                    <input class="uk-input" type="text" name="urlimg" placeholder="Ex.https://fotos.com/content/logo.png" [(ngModel)]="media.urlimg">
+                                </div>
+                                <div class="uk-width-1-1@s">
+                                    <div class="uk-form-label uk-text-left">Red Social</div>
+                                    <input class="uk-input" type="text" name="name" placeholder="Ex.Photoshop" [(ngModel)]="media.name">
+                                </div>
+                                <div class="uk-width-1-1@s">
+                                    <div class="uk-form-label uk-text-left">URL</div>
+                                    <input class="uk-input" type="text" name="urlsite" placeholder="Ex.50" [(ngModel)]="media.urlsite">
+                                </div>
+                            </form>
+                                <button class="uk-button uk-modal-close uk-button-secondary uk-margin-small-right uk-margin-small-top" type="button" (click)="cancel()">Cancelar</button>
+                                <button class="uk-button uk-button-primary uk-margin-small-top" type="submit" (click)="addMedia()">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div> 
+</div>

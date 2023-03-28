@@ -1,0 +1,49 @@
+<div class="background-color-admin">
+    <app-navbar-admin></app-navbar-admin>
+</div>
+
+<div class="background-color-body-admin">
+    
+    <div class="uk-animation-fade uk-container uk-container-large">
+        <div uk-height-viewport="offset-top: true" class="uk-section">
+            <div class="uk-container">
+                <h3 class="uk-margin-large-bottom">Edita las habilidades</h3>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-middle uk-table-small uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th class="uk-table-shrink">Imagen</th>
+                                        <th class="uk-table-shrink uk-text-nowrap">Red Social</th>
+                                        <th class="uk-table-shrink uk-text-nowrap">URL</th>
+                                        <th class="uk-table-shrink uk-text-nowrap"></th>
+
+                                    </tr>
+                                </thead>
+                                <tbody *ngFor="let media of medias">
+                                    <tr class="ligter">
+                                        <td>
+                                            <img class="uk-preserve-width" src="{{media.urlimg}}" width="60" height="60" alt="">
+                                        </td>
+                                        <td class="uk-text-nowrap">
+                                            {{media.name}}
+                                        </td>
+                                        <td class="uk-text-nowrap">
+                                            {{media.urlsite}}
+                                        </td>
+                                        <td class="uk-text-nowrap">
+                                                <button class="uk-button uk-preserve-width uk-button-secondary" uk-icon="pencil" [routerLink]="[ '/admin/media/', media.id]">
+                                                </button>              
+                                                <button class="uk-margin-small-left uk-button uk-preserve-width uk-button-danger" uk-icon="trash" (click)="deleteMedia(media.id)">
+                                                </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+

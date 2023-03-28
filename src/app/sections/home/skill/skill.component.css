@@ -1,0 +1,8 @@
+.padding-none{
+    padding: 0px 0px 0px 0px !important;
+}
+
+.uk-comment-meta > li > a {
+    pointer-events: none !important; 
+    cursor: default !important;
+}

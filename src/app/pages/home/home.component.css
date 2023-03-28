@@ -1,0 +1,116 @@
+.background-color{
+    background-color: var(--fondo-web-86);
+}
+
+:root {
+
+    /* Colors: */
+    --footer: #294459;
+    --barra-skill: #67ABDF;
+    --fondo-web-86: #294459DB;
+    --blanco: #FFFFFF;
+    --fondo-wallpaper-40: #1B69A6;
+    
+    /* Font/text values */
+    --unnamed-font-family-roboto: Roboto Condensed;
+    --unnamed-font-style-italic: italic;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-300: 300px;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-20: 20px;
+    --unnamed-font-size-30: 30px;
+    --unnamed-font-size-40: 40px;
+    --unnamed-font-size-60: 60px;
+    --unnamed-font-size-70: 70px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-37: 37px;
+    --unnamed-line-spacing-48: 48px;
+    --unnamed-line-spacing-72: 72px;
+    --unnamed-line-spacing-85: 85px;
+    }
+    
+    /* Character Styles */
+    ul li a {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-bold) !important;
+    font-size: var(--unnamed-font-size-20) !important;
+    line-height: var(--unnamed-line-spacing-24) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    text-transform: none !important;
+    }
+    .form-text {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-normal) !important;
+    font-weight: var(--unnamed-font-weight-300) !important;
+    font-size: var(--unnamed-font-size-20) !important;
+    line-height: var(--unnamed-line-spacing-24) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }
+    .footer-text {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-300) !important;
+    font-size: var(--unnamed-font-size-20) !important;
+    line-height: var(--unnamed-line-spacing-24) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }
+    p {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-300) !important;
+    font-size: var(--unnamed-font-size-30) !important;
+    line-height: var(--unnamed-line-spacing-37) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }
+    h2 {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-normal) !important;
+    font-weight: var(--unnamed-font-weight-bold) !important;
+    font-size: var(--unnamed-font-size-60) !important;
+    line-height: var(--unnamed-line-spacing-72) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }
+    .frase {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-normal) !important;
+    font-size: var(--unnamed-font-size-40) !important;
+    line-height: var(--unnamed-line-spacing-48) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }
+    h3 {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-bold) !important;
+    font-size: var(--unnamed-font-size-40) !important;
+    line-height: var(--unnamed-line-spacing-48) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }
+    h1 {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-normal) !important;
+    font-weight: var(--unnamed-font-weight-bold) !important;
+    font-size: var(--unnamed-font-size-70) !important;
+    line-height: var(--unnamed-line-spacing-85) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }
+    h4 {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-bold) !important;
+    font-size: var(--unnamed-font-size-30) !important;
+    line-height: var(--unnamed-line-spacing-37) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    }/* You can add global styles to this file, and also import other style files */

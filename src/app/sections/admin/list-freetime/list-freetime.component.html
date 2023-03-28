@@ -1,0 +1,46 @@
+<div class="background-color-admin">
+    <app-navbar-admin></app-navbar-admin>
+</div>
+<div class="background-color-body-admin">
+    
+    <div class="uk-animation-fade uk-container uk-container-large">
+        <div uk-height-viewport="offset-top: true" class="uk-section">
+            <div class="uk-container">
+                <h3 class="uk-margin-large-bottom">Edita los pasatiempos</h3>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-middle uk-table-small uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th class="uk-table-shrink">Imagen</th>
+                                        <th class="uk-table-shrink uk-text-nowrap">Actividad</th>
+                                        <th class="uk-table-expand">Descripción</th>
+                                        <th class="uk-table-shrink uk-text-nowrap"></th>
+                                    </tr>
+                                </thead>
+                                <tbody *ngFor="let freetime of freetimes">
+                                    <tr class="ligter">
+                                        <td>
+                                            <img class="uk-preserve-width" src="{{freetime.urlimg}}" width="60" height="60" alt="">
+                                        </td>
+                                        <td class="uk-text-nowrap uk-text-center">
+                                            {{freetime.subtitle}}
+                                        </td>
+                                        <td class="uk-preserve-width">
+                                            {{freetime.descripcion}}
+                                        </td>
+                                        <td class="uk-text-nowrap">
+                                            <button class="uk-button uk-preserve-width uk-button-secondary" uk-icon="pencil" [routerLink]="[ '/admin/freetime/', freetime.id]">
+                                            </button>              
+                                            <button class="uk-margin-small-left uk-button uk-preserve-width uk-button-danger" uk-icon="trash" (click)="deleteFreetime(freetime.id)">
+                                            </button>
+                                    </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="background-color-body">
+    <div class="uk-container uk-container-large">
+        <div uk-height-viewport="offset-top: true" class="uk-section">
+            <div class="login-box">
+                <h2>Login</h2>
+                <!-- <form [formGroup]="formLogin" (ngSubmit)="Login()"> -->
+                  <form >
+                  <div class="user-box">
+                    <input type="text" name="username" required [(ngModel)]="user.username">
+                    <label>Username</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="password" name="password" required [(ngModel)]="user.password">
+                    <label>Password</label>
+                  </div>
+                  <!-- <button [disabled]="!formLogin.valid" type="submit"> -->
+                    <button type="submit" (click)="login()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Iniciar Sesión
+                  </button>
+                </form>
+            </div>
+        </div>
+    </div> 
+</div>

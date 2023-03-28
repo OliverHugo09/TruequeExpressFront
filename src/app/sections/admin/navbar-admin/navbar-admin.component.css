@@ -1,0 +1,9 @@
+.uk-navbar-nav>li>a{
+    color: white;
+    
+}
+
+.uk-navbar-nav>li>a:hover{
+    text-decoration: underline;
+    transition: 2s;
+}

@@ -1,0 +1,29 @@
+<div id="contact" class="uk-section uk-margin-xlarge-top">
+    <div class="uk-container">
+
+        <h3 class="uk-margin-large-bottom">Contactame</h3>
+
+        <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+            <div class="container" *ngFor="let contact of contacts">
+                <p class="uk-margin-medium-bottom">{{contact.descripcion}}</p>
+                <form class="uk-grid-small" uk-grid>
+                    <div class="uk-width-1-2@s">
+                        <input class="uk-input" type="name" placeholder="Nombre">
+                    </div>
+                    <div class="uk-width-1-2@s">
+                        <input class="uk-input" type="email" placeholder="Email">
+                    </div>
+                    <div class="uk-width-1-1">
+                        <input class="uk-input" type="text" placeholder="Asunto">
+                    </div>
+                    <div class="uk-margin uk-width-1-1">
+                        <textarea class="uk-textarea" rows="8" placeholder="Mensaje"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.9663505929709!2d-87.05144550675978!3d20.655183589826876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5d3a6f56ee87%3A0xd9a3b1241037026d!2sAv.%205%20Bis%20438%2C%20Nicte-ha%2C%2077727%20Playa%20del%20Carmen%2C%20Q.R.!5e0!3m2!1ses-419!2smx!4v1654141217092!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>

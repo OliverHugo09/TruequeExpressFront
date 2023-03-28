@@ -1,0 +1,40 @@
+<div class="background-color-admin">
+    <app-navbar-admin></app-navbar-admin>
+</div>
+
+<div class="background-color-body-admin">
+    
+    <div class="uk-animation-fade uk-container uk-container-large">
+        <div uk-height-viewport="offset-top: true" class="uk-section">
+            <div class="uk-container">
+                <h3 class="uk-margin-large-bottom">Administración del sitio</h3>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-middle uk-table-small uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th class="uk-table-shrink">Imagen</th>
+                                        <th class="uk-table-expand">Descripción</th>
+                                        <th class="uk-table-shrink uk-text-nowrap"></th>
+                                    </tr>
+                                </thead>
+                                <tbody *ngFor="let contact of contacts">
+                                    <tr class="ligter">
+                                        <td>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.9663505929709!2d-87.05144550675978!3d20.655183589826876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5d3a6f56ee87%3A0xd9a3b1241037026d!2sAv.%205%20Bis%20438%2C%20Nicte-ha%2C%2077727%20Playa%20del%20Carmen%2C%20Q.R.!5e0!3m2!1ses-419!2smx!4v1654141217092!5m2!1ses-419!2smx" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </td>
+                                        <td class="uk-preserve-width">
+                                            {{contact.descripcion}}
+                                        </td>
+                                        <td class="uk-text-nowrap">
+                                            <button class="uk-button uk-preserve-width uk-button-secondary" uk-icon="pencil"></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

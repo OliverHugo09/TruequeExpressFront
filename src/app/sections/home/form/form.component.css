@@ -1,0 +1,15 @@
+div > .uk-input{
+    color: var(--blanco) !important;
+    background-color:rgba(255, 255, 255, 0.20);
+    text-decoration-color: black;
+    text-emphasis-color: black;
+    border: none !important;
+}
+
+div > .uk-textarea{
+    color: var(--blanco) !important;
+    background-color:rgba(255, 255, 255, 0.20);
+    text-decoration-color: black;
+    text-emphasis-color: black;
+    border: none !important;
+}

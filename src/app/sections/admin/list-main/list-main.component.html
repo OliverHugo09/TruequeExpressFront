@@ -1,0 +1,50 @@
+<div class="background-color-admin">
+    <app-navbar-admin></app-navbar-admin>
+</div>
+<div class="background-color-body-admin">
+    
+    <div class="uk-animation-fade uk-container uk-container-large">
+        <div uk-height-viewport="offset-top: true" class="uk-section">
+            <div class="uk-container">
+                <h3 class="uk-margin-large-bottom">Administración del sitio</h3>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-middle uk-table-small uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th class="uk-table-shrink">Imagen</th>
+                                        <th class="uk-table-shrink uk-text-nowrap">Empresa</th>
+                                        <th class="uk-table-shrink uk-text-nowrap">Periodo</th>
+                                        <th class="uk-table-expand">Descripción</th>
+                                        <th class="uk-table-shrink uk-text-nowrap"></th>
+                                        <th class="uk-table-shrink uk-text-nowrap"></th>
+                                    </tr>
+                                </thead>
+                                <tbody *ngFor="let main of mains">
+                                    <tr class="ligter">
+                                        <td>
+                                            <img class="uk-preserve-width uk-border-circle" src="{{main.urlimg}}" width="80" height="80" alt="">
+                                        </td>
+                                        <td class="uk-text-nowrap uk-text-center">
+                                            {{main.fullname}}
+                                        </td>
+                                        <td class="uk-text-nowrap uk-text-center">
+                                            {{main.title}}
+                                        </td>
+                                        <td class="uk-preserve-width">
+                                            {{main.description}}
+                                        </td>
+                                        <td class="uk-text-nowrap">
+                                            <button class="uk-button uk-preserve-width uk-button-secondary" uk-icon="pencil" [routerLink]="[ '/admin/main/', main.id]">
+                                            </button>
+                                    </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+

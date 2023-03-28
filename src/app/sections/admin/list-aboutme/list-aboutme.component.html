@@ -1,0 +1,47 @@
+<div class="background-color-admin">
+    <app-navbar-admin></app-navbar-admin>
+</div>
+
+<div class="background-color-body-admin">
+    
+    <div class="uk-animation-fade uk-container uk-container-large">
+        <div uk-height-viewport="offset-top: true" class="uk-section">
+            <div class="uk-container">
+                <h3 class="uk-margin-large-bottom">Edita el acerca de mi</h3>
+                    <div class="uk-card uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-middle uk-table-small uk-table-divider">
+                                <thead>
+                                    <tr>
+                                        <th class="uk-table-shrink">Imagen</th>
+                                        <th class="uk-table-expand">Descripción</th>
+                                        <th class="uk-table-shrink uk-text-nowrap">Media</th>
+                                        <th class="uk-table-shrink uk-text-nowrap"></th>
+                                    </tr>
+                                </thead>
+                                <tbody *ngFor="let aboutme of aboutmes">
+                                    <tr class="ligter">
+                                        <td>
+                                            <img class="uk-preserve-width uk-border-circle" src="{{aboutme.urlimg}}" width="100" height="100" alt="">
+                                        </td>
+                                        <td class="uk-preserve-width">
+                                            {{aboutme.descripcion}}
+                                        </td>
+                                        <td class="uk-text-nowrap" *ngFor="let media of medias">
+                                            <a href="{{media.urlsite}}" target="_blank" rel="noopener noreferrer">
+                                                <img class="uk-preserve-width uk-border-circle" src="{{media.urlimg}}" width="45" height="45" alt="{{media.name}}" title="{{media.name}}">
+                                            </a>
+                                            <canvas width="5" height="5"></canvas>
+                                        </td>
+                                        <td class="uk-text-nowrap">
+                                            <button class="uk-button uk-preserve-width uk-button-secondary" uk-icon="pencil" [routerLink]="[ '/admin/aboutme/', aboutme.id]"></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

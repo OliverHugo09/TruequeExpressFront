@@ -1,0 +1,19 @@
+<div class="uk-section uk-margin-xlarge-top">
+    <div class="uk-container">
+        <h3 class="uk-margin-large-bottom">Pasatiempos</h3>
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+            <div *ngFor="let freetime of freetimes">
+                <div class="uk-card">
+                    <div class="uk-card-media-top uk-text-center">
+                        <img src="{{freetime.urlimg}}" width="200" height="200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h4 class="uk-card-title uk-text-center">{{freetime.subtitle}}</h4>
+                        <p class="uk-card-title uk-text-center">{{freetime.descripcion}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="skills"></div>
